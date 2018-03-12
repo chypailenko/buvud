@@ -1,0 +1,90 @@
+/*CARD*/
+.card {
+    border-radius: 6px;
+    background-color: #f2f6fc;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e7f0;
+}
+
+.card-header .card-header-actions {
+    display: flex;
+}
+
+.card-header .card-header-actions svg {
+    margin-left: 8px;
+    font-size: 10px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-content-header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*BUTTON*/
+.btn-group {
+    margin: 0 -8px;
+}
+
+.btn-group .btn {
+    margin: 0 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid #a5a6bb;
+    cursor: pointer;
+}
+
+.btn.filled {
+    color: #fff;
+}
+
+.btn.filled.primary {
+    background-color: #54a6de;
+    border-color: #54a6de;
+}
+
+.btn.filled.danger {
+    background-color: #f45b63;
+    border-color: #f45b63;
+}
+
+.btn.filled.success {
+    background-color: #57c059;
+    border-color: #57c059;
+}
+
+.btn.icon-right svg {
+    margin-left: 16px;
+}

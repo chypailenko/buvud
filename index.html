@@ -1,0 +1,316 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Buvud</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/elements.css">
+</head>
+<body>
+
+<div class="drawer-layout">
+    <div class="drawer">
+        <div class="drawer-header">
+            <img class="logo" src="./img/logo.png" alt="BUVUD">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="drawer-account">
+            <img class="profile-image" src="./img/user-pic.png" alt="Some name">
+            <div class="profile-name">
+                Jack <br>
+                Williams
+            </div>
+        </div>
+        <div class="drawer-content">
+            <div class="menu-wrapper expanded">
+                <div class="menu-header menu-trigger">
+                    <span>Main</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <ul class="menu-content">
+                    <li class="selected">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-book"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-comment"></i>
+                            Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-clipboard-list"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-calendar-alt"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-th-large"></i>
+                            Layouts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-user">
+                            </i>
+                            Accounts
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="menu-wrapper">
+                <div class="menu-header menu-trigger">
+                    <span>More</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <ul class="menu-content">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-hockey-puck"></i>
+                            Payments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-folder-open"></i>
+                            Directory
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-images"></i>
+                            Library
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-question-circle"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-layout">
+        <div class="header">
+            <i class="fas fa-search"></i>
+
+            <input class="search" type="text" placeholder="Search ...">
+
+            <i class="actions far fa-sun"></i>
+            <i class="actions far fa-bell"></i>
+            <i class="actions fas fa-lock"></i>
+        </div>
+        <div class="content">
+            <div class="project-activity card">
+                <div class="card-header">
+                    <h3 class="card-title">Project Activity</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-header">
+                        <div class="btn-group">
+                            <div class="btn icon-right">
+                                <span>Month</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="btn icon-right">
+                                <span>Range</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="btn filled primary icon-right">
+                                <span>Last</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="btn filled danger icon-right">
+                                <span>Current</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="btn icon-right">
+                            <span>Today</span>
+                        </div>
+                    </div>
+                    <canvas id="project-activity-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="involved-team card">
+                <div class="card-header">
+                    <h3 class="card-title">Involved Team</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="people-list">
+                        <div class="person">
+                            <img src="./img/profiles/1.png" alt="" class="person-pic">
+                            <div class="person-details">
+                                <h4 class="person-name">Jack Williams</h4>
+                                <div class="person-title">UI/UX Designer</div>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="./img/profiles/2.png" alt="" class="person-pic">
+                            <div class="person-details">
+                                <h4 class="person-name">Kate Beckinsale</h4>
+                                <div class="person-title">Project Manager</div>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="./img/profiles/3.png" alt="" class="person-pic">
+                            <div class="person-details">
+                                <h4 class="person-name">Mickey Thompson</h4>
+                                <div class="person-title">Developer</div>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="./img/profiles/4.png" alt="" class="person-pic">
+                            <div class="person-details">
+                                <h4 class="person-name">Brian Deegan</h4>
+                                <div class="person-title">Web Designer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content-actions">
+                        <div class="btn filled success icon-right">
+                            <span>Add Teammate</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="managers-activity card">
+                <div class="card-header">
+                    <h3 class="card-title">Managers Activity</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-header">
+                        <div class="btn-group">
+                            <div class="btn icon-right">
+                                <span>February</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="btn icon-right">
+                                <span>Incoming Phone Calls</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <span class="text-bold">
+                            Total: <span class="text-danger">23 574</span>
+                        </span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="managers-activity-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visits card">
+                <div class="visits card-header">
+                    <h3 class="card-title">Visits</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content"></div>
+            </div>
+
+            <div class="messages card">
+                <div class="card-header">
+                    <h3 class="card-title">Messages</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content"></div>
+            </div>
+
+            <div class="implementation card">
+                <div class="card-header">
+                    <h3 class="card-title">Implementation</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content"></div>
+            </div>
+
+            <div class="client-activity card">
+                <div class="card-header">
+                    <h3 class="card-title">Client Activity</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content"></div>
+            </div>
+
+            <div class="mail card">
+                <div class="card-header">
+                    <h3 class="card-title">Mail</h3>
+                    <div class="card-header-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="card-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
