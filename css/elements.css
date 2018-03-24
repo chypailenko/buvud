@@ -41,7 +41,7 @@
 }
 
 .card-content-actions {
-    margin-top: 24px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,8 @@
 
 .btn {
     display: inline-block;
-    padding: 8px 16px;
+    /*padding: 8px 16px;*/
+    padding: 6px 18px;
     border-radius: 30px;
     font-size: 14px;
     border: 1px solid #a5a6bb;
@@ -87,4 +88,8 @@
 
 .btn.icon-right svg {
     margin-left: 16px;
+}
+
+.mail-btn {
+
 }

@@ -1,7 +1,8 @@
 const COLORS = {
   borderColor: '#f2f6fc',
   blue: '#49BEEC',
-  purple: '#C63AA4'
+  purple: '#C63AA4',
+  yellow: '#acc236'
 };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const PROJECT_ACTIVITY = {
@@ -95,3 +96,23 @@ const MANAGERS_ACTIVITY = {
     },
   }
 };
+
+const VISITS = {
+    type: 'doughnut',
+    data: {
+        labels: ["Views", "Users", "Purchases"],
+        datasets: [
+            {
+                label: "Visits",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+                data: [4782,1263,394],
+            }
+        ]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'Visits'
+        }
+    }
+}
